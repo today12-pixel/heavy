@@ -119,8 +119,7 @@ nicht ins Repository übernommen.
 
 1. [Eine weitere Person hinzufügen](anleitungen/1_zweiten_benutzer_hinzufuegen.md)
 2. [Warum Heavy so gebaut ist und wie die Logik funktioniert](anleitungen/2_aufbau_und_logik.md)
-3. [Lernlektüre für Einsteiger: von Python bis Docker](anleitungen/3_lernlektuere_grundlagen.md)
-4. [Heavy auf einer Synology (Container Manager)](synology/ANLEITUNG.md)
+3. [Heavy auf einer Synology (Container Manager)](synology/ANLEITUNG.md)
 
 ## Automatisch laufen lassen
 
