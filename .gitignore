@@ -1,0 +1,30 @@
+# --- Persönliche Daten: NIE veröffentlichen ---------------------------------
+# Eigene Einstellungen (Workout-IDs, Profilname) – wird beim ersten Start automatisch angelegt
+config.json
+# Trainingsdaten und Änderungsprotokoll
+data/
+*.db
+# Erzeugte Dashboards (enthalten Trainingsdaten)
+report/
+# Weitere Personen (eigene Configs, Daten und Garmin-Tokens!)
+profile/
+# Synology-Pakete (enthalten Garmin-Tokens!)
+dist/
+# Garmin-Anmeldung, falls sie irgendwo im Projekt landet
+.garminconnect-heavy/
+garmin_tokens.json
+*.log
+
+# --- Python ---------------------------------------------------------------
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# --- Editor / Betriebssystem ----------------------------------------------
+.vscode/
+.idea/
+.claude/
+Thumbs.db
+desktop.ini
+.DS_Store

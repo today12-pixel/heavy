@@ -1,0 +1,14 @@
+services:
+  heavy:
+    build: .
+    image: heavy:latest
+    container_name: heavy
+    restart: unless-stopped
+    environment:
+      - INTERVAL_HOURS=2   # wie oft Garmin abgefragt wird (ganze Stunden)
+      - HAUPTPROFIL=haupt  # Name des Hauptprofils (Ordner daten/ selbst); weitere Personen: daten/<name>/
+                           # synology_paket.ps1 setzt hier "hauptprofil" aus config.json ein
+    volumes:
+      - ./daten:/data      # config.json, Datenbank, Dashboard, Garmin-Token (pro Profil)
+    ports:
+      - "8080:8080"        # Übersicht: http://<synology-ip>:8080 (nur im Heimnetz, nicht im Router freigeben!)
